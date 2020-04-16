@@ -8,8 +8,6 @@ RUN pip install flask
 RUN pip install gunicorn
 RUN pip uninstall pyjwt
 RUN pip uninstall jwt
-RUN pip install pyjwt
 RUN pip install jwt
 
 ENTRYPOINT [ "gunicorn", "-b", ":8080", "main:APP" ]
-
