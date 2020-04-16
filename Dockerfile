@@ -6,7 +6,10 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install flask
 RUN pip install gunicorn
+RUN pip uninstall pytest
+RUN pip uninstall jwt
 RUN pip install pytest
+RUN pip install jwt
 
 ENTRYPOINT [ "gunicorn", "-b", ":8080", "main:APP" ]
 
