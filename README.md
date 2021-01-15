@@ -1,5 +1,18 @@
 # Deploying a Flask API
 
+유다시티 aws project입니다.
+Docker를 통한 containerizing, AWS를 이용한 eks, codepipeline, codebuild 등을 활용합니다.
+
+간단한 jwt encoding decoding 기능이 있는 flask app을 실제로 aws eks 서비스를 이용해서
+배포하는 프로젝트입니다.
+
+yml파일은 유다시티에서 작성해준 것을 이용합니다.
+때문에 실제로 pipeline의 cloudformation templete이나 buildspec을 직접 작성하는 수준은 아니지만,
+해당 파일들을 이용해서 AWS에서 실제로 배포까지 하는 과정을 배웁니다.
+(계정개설, IAM 유저 및 롤설정, Cluster 생성, GIT hub을 연동한 codepipeline, codebuild 생성, parameter store활용 등)
+
+
+
 This is the project starter repo for the fourth course in the [Udacity Full Stack Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004): Server Deployment, Containerization, and Testing.
 
 In this project you will containerize and deploy a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
